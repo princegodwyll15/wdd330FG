@@ -65,28 +65,28 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
       // Get return URL from query parameters
       const urlParams = new URLSearchParams(window.location.search);
-      const returnUrl = urlParams.get('returnUrl');
-      
+      const returnUrl = urlParams.get("returnUrl");
+
       // Check for pending appointment
-      const pendingAppointment = localStorage.getItem('pendingAppointment');
-      
+      const pendingAppointment = localStorage.getItem("pendingAppointment");
+
       if (pendingAppointment) {
         // Remove the pending appointment from storage
-        localStorage.removeItem('pendingAppointment');
-        
+        localStorage.removeItem("pendingAppointment");
+
         // If there's a return URL, redirect to it
         if (returnUrl) {
           window.location.href = decodeURIComponent(returnUrl);
         } else {
           // Otherwise, redirect to appointments page
-          window.location.href = '../appointment/appoint.html';
+          window.location.href = "../appointment/appoint.html";
         }
       } else if (returnUrl) {
         // If there's a return URL but no pending appointment, redirect to it
         window.location.href = decodeURIComponent(returnUrl);
       } else {
         // Default to home page
-        window.location.href = '../index.html';
+        window.location.href = "../index.html";
       }
     } catch (err) {
       // Remove loading alert if it exists

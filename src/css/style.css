@@ -1034,8 +1034,6 @@ login styles goes here
   text-decoration: underline;
 }
 
-
-
 /* Confirmation Page Styles */
 
 .confirmation {
@@ -1147,7 +1145,6 @@ login styles goes here
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 /****************************
 register styles goes here

@@ -31,7 +31,7 @@ export function displayHeader() {
 
   // Check if current page is home page
   const path = window.location.pathname.toLowerCase();
-  const isHomePage = path.endsWith('index.html') || path === '/';
+  const isHomePage = path.endsWith("index.html") || path === "/";
 
   // Create header structure
   header.innerHTML = `
@@ -42,7 +42,7 @@ export function displayHeader() {
                 <a href="../account/login.html" id="account-link"><span>My Account</span></a>
             </div>
         </div>
-        <div class="navbar-container" style="${isHomePage ? '' : 'display: none;'}">
+        <div class="navbar-container" style="${isHomePage ? "" : "display: none;"}">
             <div class="navbar">
                 <div class="hambuger-menu">
                     <button class="menu-button"><i class="fas fa-bars"></i></button>

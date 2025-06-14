@@ -21,7 +21,7 @@ function initializeAppointmentForm() {
 
   // Initialize date picker if needed
   initializeDatePicker();
-  
+
   // Handle form submission
   form.addEventListener("submit", handleAppointmentSubmit);
 }
@@ -55,7 +55,7 @@ async function handleAppointmentSubmit(e) {
     preferredDoctor: formData.get("preferredDoctor"),
     emergencyContact: formData.get("emergencyContact"),
     emergencyPhone: formData.get("emergencyPhone"),
-    insurance: formData.get("insurance")
+    insurance: formData.get("insurance"),
   };
 
   // Validate form data
@@ -65,7 +65,10 @@ async function handleAppointmentSubmit(e) {
 
   try {
     // Show loading state
-    const loadingAlert = customAlert.showAlert("Creating appointment...", "info");
+    const loadingAlert = customAlert.showAlert(
+      "Creating appointment...",
+      "info",
+    );
 
     // Try to save appointment
     const success = users.userAppointment(appointment);
@@ -79,13 +82,13 @@ async function handleAppointmentSubmit(e) {
     if (success) {
       customAlert.closeAlert(loadingAlert);
       customAlert.showSuccess("Appointment created successfully!");
-      
+
       // Store appointment data for confirmation page
       localStorage.setItem("appointmentData", JSON.stringify(appointment));
-      
+
       // Clear form
       e.target.reset();
-      
+
       // Redirect to confirmation page
       setTimeout(() => {
         window.location.href = "../appointment/confirmation.html";
@@ -102,23 +105,25 @@ async function handleAppointmentSubmit(e) {
 function validateAppointmentData(appointment) {
   // Required fields validation
   const requiredFields = [
-    'fullName',
-    'email',
-    'phone',
-    'date',
-    'time',
-    'symptoms',
-    'medicalHistory',
-    'preferredDoctor',
-    'emergencyContact',
-    'emergencyPhone'
+    "fullName",
+    "email",
+    "phone",
+    "date",
+    "time",
+    "symptoms",
+    "medicalHistory",
+    "preferredDoctor",
+    "emergencyContact",
+    "emergencyPhone",
   ];
 
   // Check if all required fields are filled
-  const missingFields = requiredFields.filter(field => !appointment[field]);
-  
+  const missingFields = requiredFields.filter((field) => !appointment[field]);
+
   if (missingFields.length > 0) {
-    customAlert.showError(`Please fill in the following fields: ${missingFields.join(', ')}`);
+    customAlert.showError(
+      `Please fill in the following fields: ${missingFields.join(", ")}`,
+    );
     return false;
   }
 
@@ -128,7 +133,7 @@ function validateAppointmentData(appointment) {
     customAlert.showError("Please enter a valid date");
     return false;
   }
-  
+
   const today = new Date();
   if (appointmentDate < today) {
     customAlert.showError("Please select a future date");
@@ -158,7 +163,9 @@ function validateAppointmentData(appointment) {
 
   // Emergency contact validation
   if (!appointment.emergencyPhone.match(phoneRegex)) {
-    customAlert.showError("Please enter a valid emergency contact phone number");
+    customAlert.showError(
+      "Please enter a valid emergency contact phone number",
+    );
     return false;
   }
 
@@ -170,7 +177,7 @@ window.addEventListener("load", () => {
   const pendingAppointment = localStorage.getItem("pendingAppointment");
   if (pendingAppointment) {
     const appointmentData = JSON.parse(pendingAppointment);
-    
+
     // Fill form with pending data
     const form = document.getElementById("appointment-form");
     if (form) {

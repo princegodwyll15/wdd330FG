@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function initializeConfirmationPage() {
   // Get appointment data from localStorage
   const appointmentData = JSON.parse(localStorage.getItem("appointmentData"));
-  
+
   if (!appointmentData) {
     showError("Appointment data not found. Please try booking again.");
     return;
@@ -29,11 +29,11 @@ function displayAppointmentDetails(data) {
     weekday: "long",
     year: "numeric",
     month: "long",
-    day: "numeric"
+    day: "numeric",
   });
   const formattedTime = appointmentDate.toLocaleTimeString("en-US", {
     hour: "2-digit",
-    minute: "2-digit"
+    minute: "2-digit",
   });
 
   // Display doctor name based on specialty
@@ -53,7 +53,7 @@ function getDoctorName(specialty) {
     cardiologist: "Dr. Johnson (Cardiologist)",
     pediatrician: "Dr. Williams (Pediatrician)",
     dermatologist: "Dr. Brown (Dermatologist)",
-    other: "Dr. Miller (Specialist)"
+    other: "Dr. Miller (Specialist)",
   };
   return doctorNames[specialty] || "Dr. Miller (Specialist)";
 }
