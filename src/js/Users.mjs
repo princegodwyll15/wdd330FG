@@ -1,5 +1,3 @@
-import * as jwt_decode from 'jwt-decode';
-
 class Users {
     constructor() {
         this.userDBKey = 'registeredUsers'; // Key to store users
@@ -142,7 +140,7 @@ class Users {
         if (!token) return null;
 
         try {
-            const user = jwt_decode(token);
+            const user = this.decodeToken(token);
 
             // Check for expiration
             if (user.exp && user.exp < Date.now() / 1000) {
@@ -154,6 +152,41 @@ class Users {
         } catch (err) {
             console.error("Invalid token", err);
             return null;
+        }
+    }
+
+    userAppointment(appointment) {
+        // Check if user is logged in
+        const token = localStorage.getItem(this.tokenKey);
+        if (!token) {
+            // Save the appointment data temporarily
+            localStorage.setItem('pendingAppointment', JSON.stringify(appointment));
+            
+            // Redirect to login page with return URL
+            const returnUrl = encodeURIComponent(window.location.href);
+            window.location.href = '../account/login.html?returnUrl=' + returnUrl;
+            return;
+        }
+
+        try {
+            const users = this.getUsers();
+            const currentUser = this.getCurrentUser();
+            const userIndex = users.findIndex(user => user.email === currentUser.email);
+            
+            if (userIndex !== -1) {
+                // Initialize appointments array if it doesn't exist
+                if (!users[userIndex].appointments) {
+                    users[userIndex].appointments = [];
+                }
+                
+                users[userIndex].appointments.push(appointment);
+                this.saveUsers(users);
+                return true;
+            }
+            throw new Error('User not found in database');
+        } catch (error) {
+            console.error('Error saving appointment:', error);
+            return false;
         }
     }
 

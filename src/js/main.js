@@ -1,7 +1,3 @@
-import "../css/style.css";
-import "../css/large.css";
-import "../css/all.min.css";
-
 import { displayHeader, displayFooter } from "./utils";
 import { healthTalkTemplate } from "./healthEvent.mjs";
 import Services from "./Services.mjs";
@@ -9,8 +5,10 @@ import Doctors from "./Doctors.mjs";
 import CustomAlert from "./customAlert.js";
 
 // Initialize header and footer first
-displayHeader();
-displayFooter();
+document.addEventListener("DOMContentLoaded", () => {
+  displayHeader();
+  displayFooter();
+});
 
 // Check if we're on the index page
 const currentPath = window.location.pathname;

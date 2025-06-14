@@ -29,16 +29,20 @@ export function displayHeader() {
     return;
   }
 
+  // Check if current page is home page
+  const path = window.location.pathname.toLowerCase();
+  const isHomePage = path.endsWith('index.html') || path === '/';
+
   // Create header structure
   header.innerHTML = `
         <div class="logo-container">
             <div class="logo">
                 <a href="../index.html"><span>Health</span>Consult</a>
                 <p id="dateTime"></p>
-                <a href="../account/" id="account-link"><span>My Account</span></a>
+                <a href="../account/login.html" id="account-link"><span>My Account</span></a>
             </div>
         </div>
-        <div class="navbar-container">
+        <div class="navbar-container" style="${isHomePage ? '' : 'display: none;'}">
             <div class="navbar">
                 <div class="hambuger-menu">
                     <button class="menu-button"><i class="fas fa-bars"></i></button>
@@ -50,7 +54,7 @@ export function displayHeader() {
                     <li><a href="#doctors">Doctors</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="../appointment/index.html" class="book-button">Make an Appointment</a>
+                <a href="../appointment/appoint.html" class="book-button">Make an Appointment</a>
             </div>
         </div>
     `;
@@ -94,7 +98,7 @@ export function displayHeader() {
             await users.logout();
 
             // Update the link to point to the login page
-            accountLink.href = "../account/";
+            accountLink.href = "../account/login.html";
             accountLink.innerHTML = "<span>My Account</span>";
 
             // Show success alert
@@ -105,7 +109,7 @@ export function displayHeader() {
 
             // Redirect to the login page after a short delay
             setTimeout(() => {
-              window.location.href = "../account/";
+              window.location.href = "../account/login.html";
             }, 2000);
           } catch (error) {
             // Handle any logout errors
@@ -117,19 +121,19 @@ export function displayHeader() {
       } else {
         console.error("User not found in database");
         // Fallback to email if user not found
-        accountLink.href = "../account/";
+        accountLink.href = "../account/login.html";
         accountLink.innerHTML = "<span>My Account</span>";
       }
     } catch (error) {
       console.error("Error decoding token:", error);
       // If token is invalid, remove it and show login link
       localStorage.removeItem("authToken");
-      accountLink.href = "../account/";
+      accountLink.href = "../account/login.html";
       accountLink.innerHTML = "<span>My Account</span>";
     }
   } else {
     // User is not logged in
-    accountLink.href = "../account/";
+    accountLink.href = "../account/login.html";
     accountLink.innerHTML = "<span>My Account</span>";
   }
 }

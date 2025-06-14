@@ -191,6 +191,22 @@
     gap: 1.5rem;
     justify-content: center;
   }
+  .confirmation {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .confirmation-icon {
+    font-size: 3rem;
+  }
+
+  .confirmation-title {
+    font-size: 1.75rem;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
 }
 
 /* Tablet breakpoint */

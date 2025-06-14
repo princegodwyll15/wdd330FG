@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="HealthConsult Appointment Confirmation" />
+    <meta name="author" content="Prince Godwyll" />
+    <meta name="application-name" content="HealthConsult" />
+    <meta
+      name="keywords"
+      content="HealthConsult, Health, Consult, Healthcare, Appointment Confirmation"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/large.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/confirmation.css" />
+    <link rel="stylesheet" href="../assets/favicon.svg" />
+
+    <script type="module" src="../js/confirmation.js" type="module"></script>
+
+    <title>Appointment Confirmation - HealthConsult</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!-- dynamic header content -->
+    </header>
+
+    <main id="app">
+      <section class="confirmation" id="confirmation">
+        <div class="confirmation-content">
+          <div class="confirmation-header">
+            <i class="fas fa-check-circle confirmation-icon"></i>
+            <h2 class="confirmation-title">Appointment Confirmed!</h2>
+          </div>
+
+          <div class="appointment-details">
+            <div class="detail-item">
+              <span class="detail-label">Date:</span>
+              <span id="confirmation-date" class="detail-value"></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Time:</span>
+              <span id="confirmation-time" class="detail-value"></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Doctor:</span>
+              <span id="confirmation-doctor" class="detail-value"></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Patient Name:</span>
+              <span id="confirmation-name" class="detail-value"></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Phone:</span>
+              <span id="confirmation-phone" class="detail-value"></span>
+            </div>
+          </div>
+
+          <div class="confirmation-message">
+            <p>
+              Your appointment has been successfully scheduled. We will send you a
+              reminder 24 hours before your appointment time. Please arrive 15 minutes
+              early for check-in.
+            </p>
+          </div>
+
+          <div class="confirmation-actions">
+            <button class="btn btn-primary" id="print-button">
+              <i class="fas fa-print"></i> Print Confirmation
+            </button>
+            <button class="btn btn-secondary" id="back-button">
+              <i class="fas fa-arrow-left"></i> Back to Home
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <!-- dynamic footer content -->
+    </footer>
+
+    <noscript>
+      <strong
+        >We're sorry but HealthConsult doesn't work properly without JavaScript
+        enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+  </body>
+</html>
