@@ -1,0 +1,75 @@
+[
+  {
+    "aboutHeading": "About HealthConsult",
+    "aboutOverview": "At HealthConsult, we believe healthcare is more than just treating illness — it’s about building lasting relationships, empowering individuals, and promoting lifelong wellness. Our dedicated team of experienced physicians, nurses, and support staff is committed to delivering high-quality, patient-centered care tailored to each person’s unique needs. We offer a comprehensive range of services, including primary care, specialty care, urgent care, and diagnostic services — all conveniently provided under one roof. Whether you’re managing a chronic condition, seeking a routine check-up, or in need of prompt attention, our team is here to support you every step of the way. To make healthcare more accessible and stress-free, we offer online appointment scheduling, secure patient portals, and electronic health records, giving you control over your health anytime, anywhere. What truly sets us apart is our compassionate approach: we treat every patient with dignity, respect, and personalized attention.",
+
+    "aboutOverviewImage": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "doctorsAbout": {
+      "numberOfDoctors": 8,
+      "departments": [
+        "Cardiology",
+        "Pediatrics",
+        "Dermatology",
+        "Orthopedics",
+        "Neurology",
+        "Oncology",
+        "Internal Medicine",
+        "Radiology",
+        "General Surgery",
+        "Emergency Medicine"
+      ],
+      "departmentInfo": {
+        "numberOfDepartments": 12,
+        "departments": [
+          "Cardiology",
+          "Pediatrics",
+          "Dermatology",
+          "Orthopedics",
+          "Neurology",
+          "Oncology",
+          "Internal Medicine",
+          "Radiology",
+          "General Surgery",
+          "Emergency Medicine"
+        ]
+      },
+      "awardsAbout": {
+        "numberOfAwards": 10,
+        "awards": [
+          {
+            "year": 2022,
+            "name": "Excellence in Patient Care Award",
+            "organization": "National Healthcare Association"
+          },
+          {
+            "year": 2023,
+            "name": "Top Hospital for Innovation",
+            "organization": "Global Health Institute"
+          },
+          {
+            "year": 2024,
+            "name": "Community Service Recognition",
+            "organization": "Accra Health Council"
+          }
+        ]
+      },
+      "researchLabsAbout": {
+        "numberOfResearchLabs": 12,
+        "researchLabs": [
+          {
+            "name": "Genomic Research Lab",
+            "focus": "Personalized medicine and genetic therapies"
+          },
+          {
+            "name": "Cardiovascular Research Unit",
+            "focus": "Advancements in heart disease prevention and treatment"
+          },
+          {
+            "name": "Neuroscience Innovation Hub",
+            "focus": "Brain health and neurological disorder treatments"
+          }
+        ]
+      }
+    }
+  }
+]

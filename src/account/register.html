@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="HealthConsult" />
+    <meta name="author" content="Prince Godwyll" />
+    <meta name="application-name" content="HealthConsult" />
+    <meta
+      name="keywords"
+      content="HealthConsult, Health, Consult, Healthcare"
+    />
+    <title>HealthConsult | register</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <!-- dynamic header content -->
+    </header>
+
+    <section class="register" id="register">
+      <form id="register-form" class="register-form">
+        <h1>Register</h1>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            required
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            required
+            placeholder="Enter your last name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            placeholder="Confirm your password"
+          />
+        </div>
+        <button type="submit">Register</button>
+        <p class="register-link">
+          Already have an account?
+          <a href="./index.html">Click here to login</a>
+        </p>
+      </form>
+    </section>
+
+    <footer id="main-footer">
+      <!-- dynamic footer content -->
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/userRegister.js"></script>
+
+    <noscript>
+      <strong
+        >We're sorry but HealthConsult doesn't work properly without JavaScript
+        enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+  </body>
+</html>

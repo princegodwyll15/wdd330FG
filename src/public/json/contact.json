@@ -1,0 +1,14 @@
+{
+  "companyName": "HealthConsult",
+  "address": {
+    "street": "Adabraka",
+    "city": "Healthyville",
+    "state": "CA",
+    "zip": "90210",
+    "country": "Ghana"
+  },
+  "phone": "+1-800-555-1234",
+  "fax": "+1-800-555-5678",
+  "email": "info@healthconsult.com",
+  "website": "https://www.healthconsult.com"
+}

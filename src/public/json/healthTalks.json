@@ -1,0 +1,66 @@
+[
+  {
+    "heading": "Understanding Hypertension: A Guide to Managing High Blood Pressure",
+    "description": "Gain insight into what causes high blood pressure, how it affects your body, and what you can do to control it. This session will explain risk factors, early warning signs, and the benefits of timely management through diet, exercise, and medications.",
+    "speaker": "Dr. Angela Mensah, Cardiologist",
+    "date": "2025-07-15",
+    "time": "10:00 AM - 11:00 AM",
+    "location": "HealthConsult Auditorium"
+  },
+  {
+    "heading": "Diabetes Demystified: Practical Tips for Living Well with Diabetes",
+    "description": "Learn the essentials of managing diabetes in daily life. This talk offers helpful advice on tracking blood sugar, choosing balanced meals, staying active, and understanding the different types of diabetes and their treatments.",
+    "speaker": "Nurse Practitioner Kofi Adu, Certified Diabetes Educator",
+    "date": "2025-08-02",
+    "time": "02:00 PM - 03:00 PM",
+    "location": "HealthConsult Conference Room 1"
+  },
+  {
+    "heading": "Mental Wellness Matters: Strategies for Stress Reduction and Emotional Well-being",
+    "description": "Discover effective techniques for managing stress and maintaining emotional balance. This session will cover the impact of stress on mental health, the power of mindfulness, and strategies to improve mental wellness.",
+    "speaker": "Dr. Nana Yaa Appiah, Certified Clinical Psychologist",
+    "date": "2025-08-20",
+    "time": "11:30 AM - 12:30 PM",
+    "location": "HealthConsult Auditorium"
+  },
+  {
+    "heading": "Healthy Eating for a Healthy Heart: Nutritional Guidance for Cardiovascular Health",
+    "description": "Explore how smart food choices can protect your heart. This talk will guide you through heart-friendly nutrition tips, explain which foods to prioritize or avoid, and help you build cardiovascular wellness.",
+    "speaker": "Ms. Ama Nkrumah, Registered Dietitian",
+    "date": "2025-09-10",
+    "time": "09:00 AM - 10:00 AM",
+    "location": "HealthConsult Conference Room 2"
+  },
+  {
+    "heading": "Preventing Common Cancers: Awareness and Early Detection",
+    "description": "Join this important session on cancer prevention. Understand the major types of cancer, warning signs, lifestyle risk factors, and the power of early screenings in improving outcomes.",
+    "speaker": "Dr. Kwame Ofori, Oncologist",
+    "date": "2025-09-25",
+    "time": "01:00 PM - 02:00 PM",
+    "location": "HealthConsult Lecture Hall"
+  },
+  {
+    "heading": "Healthy Bones at Every Age: Understanding Osteoporosis and Bone Health",
+    "description": "Learn how to protect your bones as you age. This talk will focus on the causes and prevention of osteoporosis, and the importance of calcium, vitamin D, and weight-bearing exercise.",
+    "speaker": "Dr. Efua Agyeman, Orthopedic Specialist",
+    "date": "2025-10-05",
+    "time": "10:30 AM - 11:30 AM",
+    "location": "HealthConsult Auditorium"
+  },
+  {
+    "heading": "Vaccines and You: Staying Protected Through Immunization",
+    "description": "Get the facts about vaccines—how they work, what’s recommended by age, and why they matter for community health. This session clears up common myths and empowers you with knowledge.",
+    "speaker": "Dr. Michael Addo, Public Health Specialist",
+    "date": "2025-10-20",
+    "time": "03:00 PM - 04:00 PM",
+    "location": "HealthConsult Conference Room 3"
+  },
+  {
+    "heading": "Sleep Smart: The Role of Rest in Health and Healing",
+    "description": "Discover the critical impact of sleep on physical and mental health. Learn how poor sleep contributes to chronic disease and how to develop habits for better rest and recovery.",
+    "speaker": "Dr. Linda Owusu, Sleep Medicine Specialist",
+    "date": "2025-11-02",
+    "time": "09:30 AM - 10:30 AM",
+    "location": "HealthConsult Wellness Center"
+  }
+]

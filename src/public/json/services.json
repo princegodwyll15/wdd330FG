@@ -1,0 +1,42 @@
+[
+  {
+    "serviceName": "Primary Care",
+    "description": "Comprehensive health care services for individuals and families, including preventive care and treatment of common illnesses.",
+    "icon": "fas fa-user-md"
+  },
+  {
+    "serviceName": "Pediatrics",
+    "description": "Dedicated health services for infants, children, and adolescents, ensuring proper growth and development.",
+    "icon": "fas fa-baby"
+  },
+  {
+    "serviceName": "Cardiology",
+    "description": "Heart care services including diagnosis, treatment, and management of cardiovascular diseases.",
+    "icon": "fas fa-heartbeat"
+  },
+  {
+    "serviceName": "Dermatology",
+    "description": "Skin care and treatment of skin-related conditions such as acne, eczema, and skin cancer.",
+    "icon": "fas fa-user-nurse"
+  },
+  {
+    "serviceName": "Orthopedics",
+    "description": "Treatment of musculoskeletal issues including joint pain, fractures, and sports injuries.",
+    "icon": "fas fa-bone"
+  },
+  {
+    "serviceName": "Radiology",
+    "description": "Diagnostic imaging services including X-rays, MRIs, CT scans, and ultrasounds.",
+    "icon": "fas fa-x-ray"
+  },
+  {
+    "serviceName": "Emergency Services",
+    "description": "24/7 emergency care for critical and urgent medical situations.",
+    "icon": "fas fa-ambulance"
+  },
+  {
+    "serviceName": "Laboratory Services",
+    "description": "On-site lab tests for accurate diagnosis, including blood tests and screenings.",
+    "icon": "fas fa-vials"
+  }
+]

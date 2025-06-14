@@ -1,0 +1,210 @@
+/*large screens sizes*/
+@media screen and (min-width: 62rem) {
+  .logo-container .logo {
+    width: 80%;
+  }
+
+  .logo-container .logo {
+    font-size: 16px;
+  }
+
+  .navbar-container .navbar {
+    width: 80%;
+  }
+
+  .about-content-overview-container {
+    flex-direction: row;
+  }
+
+  .about-stats-wrapper {
+    flex-direction: row;
+  }
+
+  .about-stat-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 4em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar .nav-links a:hover {
+    opacity: 1;
+  }
+
+  .navbar .hambuger-menu {
+    display: none;
+  }
+
+  .hero-container {
+    height: 70vh;
+  }
+
+  .hero-content {
+    max-width: 800px !important;
+  }
+
+  .hero-content h2 {
+    font-size: 40px !important;
+  }
+
+  .hero-content p {
+    font-size: 18px !important;
+  }
+
+  .about-content-overview-container {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .about-content-overview-container img {
+    width: 50%;
+  }
+
+  .about-content-items-container {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1.5rem;
+  }
+
+  .services-container {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .service-card {
+    width: 32%;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-details {
+    width: 79%;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .contact-details .contact-info-container {
+    width: 50%;
+  }
+
+  .slider-wrapper {
+    width: 80%;
+  }
+
+  .doctors-container {
+    width: 81%;
+    margin: auto;
+  }
+
+  .doctor-card {
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .callToAction-container {
+    padding: 10rem;
+  }
+
+  .callToAction-container h2 {
+    font-size: 2rem;
+  }
+
+  .appointment-container {
+    width: 80%;
+  }
+
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    flex: 1 1 25%;
+    padding: 0.75rem;
+  }
+
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+/* Responsive behavior for tablets and mobile*/
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-stats-wrapper {
+    flex-direction: column;
+  }
+
+  .services-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}
+
+/* Tablet breakpoint */
+@media (min-width: 600px) {
+  .doctor-card {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  .doctor-card {
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+  }
+}

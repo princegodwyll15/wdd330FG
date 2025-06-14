@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Nana-Akyaa Yao",
+    "specialty": "Paediatric and Congenital Cardiologist",
+    "image": "../images/doctors/nana-akyaa-yao.jpg",
+    "bookLink": "https://cardio.com.gh/book-appointment/dr-nana-akyaa-yao"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Osei Owusu",
+    "specialty": "Pediatric Critical Care Medicine",
+    "image": "../images/doctors/dr-osei-owusu.webp",
+    "bookLink": "https://doctors.lifebridgehealth.org/provider/osei-owusu/2515128"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Linda Okra-Boateng",
+    "specialty": "Emergency Medicine",
+    "image": "../images/doctors/linda-okra-boateng.jpg",
+    "bookLink": "https://www.healthgrades.com/physician/dr-linda-okra-boateng-3sj4j"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Kofi Takyi Asante",
+    "specialty": "Orthopedic Surgeon",
+    "image": "../images/doctors/kofi-takyi-asante.webp",
+    "bookLink": "https://www.isser.ug.edu.gh/faculty/Dr.%20Kofi%20Takyi%20Asante"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Efua Owusu-Ansah",
+    "specialty": "Gynecologist",
+    "image": "../images/doctors/efua-owusu-ansah.webp",
+    "bookLink": "https://www.researchgate.net/profile/Efua-Owusu-Ansah-2"
+  },
+  {
+    "id": 5,
+    "name": "Dr Kweku Oteng",
+    "specialty": "Gynecologist",
+    "image": "../images/doctors/Dr Kweku Oteng.webp",
+    "bookLink": "https://www.researchgate.net/profile/Efua-Owusu-Ansah-2"
+  }
+]
