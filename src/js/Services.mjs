@@ -134,7 +134,7 @@ export default class Services {
 
         const callToActionLink = document.createElement('a');
         callToActionLink.classList.add('callToAction-link');
-        callToActionLink.href = "../apointment/index.html";
+        callToActionLink.href = "../appointment/appoint.html";
         callToActionLink.textContent = "Make an Appointment";
         callToActionContainer.appendChild(callToActionLink);
     }
