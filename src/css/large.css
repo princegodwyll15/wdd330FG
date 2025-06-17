@@ -4,6 +4,11 @@
     width: 80%;
   }
 
+  #dateTime{
+    display: flex;
+  }
+  
+
   .logo-container .logo {
     font-size: 16px;
   }

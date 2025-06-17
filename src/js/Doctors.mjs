@@ -29,7 +29,7 @@ export default class Doctors {
                 <h3 class="doctor-name">${doctor.name}</h3>
                 <p class="doctor-specialty">${doctor.specialty}</p>
             </div>
-            <a href="${doctor.bookLink}" target="_blank" class="book-link">Book Now</a>
+            <a href="../appointment/appoint.html" target="_blank" class="book-link">Book Now</a>
         `;
 
             container.appendChild(card);

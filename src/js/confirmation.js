@@ -1,4 +1,5 @@
 import { displayHeader, displayFooter } from "./utils.js";
+import CustomAlert from "./customAlert.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   displayHeader();
@@ -49,18 +50,22 @@ function displayAppointmentDetails(data) {
 
 function getDoctorName(specialty) {
   const doctorNames = {
-    general: "Dr. Smith (General Practitioner)",
-    cardiologist: "Dr. Johnson (Cardiologist)",
-    pediatrician: "Dr. Williams (Pediatrician)",
-    dermatologist: "Dr. Brown (Dermatologist)",
-    other: "Dr. Miller (Specialist)",
+    general: "Dr. Nana-Akyaa Yao (General Practitioner)",
+    cardiologist: "Dr. Osei Owusu (Cardiologist)",
+    pediatrician: "Dr. Nana-Akyaa Yao (Pediatrician)",
+    dermatologist: "Dr. Efua Owusu-Ansah (Dermatologist)",
+    emergency: "Dr. Linda Okra-Boateng (Emergency Medicine)",
+    orthopedic: "Dr. Kofi Takyi Asante (Orthopedic Surgeon)",
+    gynecologist: "Dr. Efua Owusu-Ansah (Gynecologist)",
+    other: "Dr. Kweku Oteng (Specialist)",
   };
-  return doctorNames[specialty] || "Dr. Miller (Specialist)";
+  return doctorNames[specialty] || "Dr. Kweku Oteng (Specialist)";
 }
 
 function initializeButtons() {
   const printButton = document.getElementById("print-button");
   const backButton = document.getElementById("back-button");
+  const sendNotificationButton = document.getElementById("send-notification-button");
 
   printButton.addEventListener("click", () => {
     window.print();
@@ -68,6 +73,12 @@ function initializeButtons() {
 
   backButton.addEventListener("click", () => {
     window.location.href = "../index.html";
+  });
+
+
+  const customAlert = new CustomAlert();
+  sendNotificationButton.addEventListener("click", () => {
+   customAlert.showSuccess("Notification sent successfully! <br> Check your email for confirmation.");
   });
 }
 

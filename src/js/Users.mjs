@@ -171,19 +171,25 @@ class Users {
         try {
             const users = this.getUsers();
             const currentUser = this.getCurrentUser();
+            
+            if (!currentUser || !currentUser.email) {
+                throw new Error('No logged-in user found');
+            }
+
             const userIndex = users.findIndex(user => user.email === currentUser.email);
             
-            if (userIndex !== -1) {
-                // Initialize appointments array if it doesn't exist
-                if (!users[userIndex].appointments) {
-                    users[userIndex].appointments = [];
-                }
-                
-                users[userIndex].appointments.push(appointment);
-                this.saveUsers(users);
-                return true;
+            if (userIndex === -1) {
+                throw new Error('User not found in database');
             }
-            throw new Error('User not found in database');
+
+            // Initialize appointments array if it doesn't exist
+            if (!users[userIndex].appointments) {
+                users[userIndex].appointments = [];
+            }
+            
+            users[userIndex].appointments.push(appointment);
+            this.saveUsers(users);
+            return true;
         } catch (error) {
             console.error('Error saving appointment:', error);
             return false;

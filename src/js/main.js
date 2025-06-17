@@ -1,5 +1,5 @@
 import { displayHeader, displayFooter } from "./utils";
-import { healthTalkTemplate } from "./healthEvent.mjs";
+import HealthEvent from "./healthEvent.mjs";
 import Services from "./Services.mjs";
 import Doctors from "./Doctors.mjs";
 import CustomAlert from "./customAlert.js";
@@ -28,7 +28,8 @@ if (isIndexPage) {
 
   // Load all content for index page
   // Health talks
-  healthTalkTemplate();
+  const healthEvent = new HealthEvent();
+  healthEvent.healthTalkTemplate();
 
   // Initialize services
   const service = new Services();
